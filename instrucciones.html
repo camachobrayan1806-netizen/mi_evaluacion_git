@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones de la Actividad - Sistemas Operativos UBV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">
+                <img class="logo-image" src="./imagenes/logo_ubv.jpg" alt="Logo UBV">
+            </div>
+            <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+            <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+            <hr>
+            <h2>Evaluación Práctica: Versionado de Proyectos con Git (Valor: 20%)</h2>
+
+            <a href="index.html" class="btn-rubrica" style="background-color: #7f8c8d;">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                </svg>
+                Volver al Catálogo
+            </a>
+        </header>
+
+        <div class="card">
+            <h3>Objetivo de la Actividad</h3>
+            <p>En esta evaluación mediremos tus conocimientos sobre buenas prácticas
+                simulando un flujo de trabajo real colaborativo usando
+                <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git"
+                    target="_blank"><strong>Git</strong></a>.
+                <br>
+                    Tus conocimientos serán evaluados en base a tu capacidad para clonar un repositorio, crear ramas, realizar commits atómicos con mensajes descriptivos, modificar archivos HTML siguiendo una plantilla y finalmente subir tu trabajo al repositorio remoto para su revisión.
+                <br>
+                La clase de git pueden encontrarla en los siguientes enlaces:
+                <ul>
+                    <li><a href="https://youtu.be/cuT8XBqoYA4?si=-nRmwPNFdYjejknS" target="_blank">Git - Parte 1</a></li>
+                    <li><a href="https://youtu.be/1Y4RNcdiP0E?si=N0pzjZ1_yr7vqBwd" target="_blank">Git - Parte 2</a></li>
+                    <li><a href="https://youtu.be/U83pCG6kBBU?si=C959vZ0liVhvK1y8" target="_blank">Git - Parte 3</a></li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3><span class="step-number">1</span> Clonar y Ramificar</h3>
+            <p>
+                Primero, debes descargar en tu computadora el <strong>repositorio remoto (branch principal)</strong> que
+                el profesor ha compartido:<br>
+                <code>https://github.com/hiperiom/mi_evaluacion_git.git</code>
+                <br>
+                Para ello, abre tu terminal y ejecuta la clonación.
+                Luego, accede a la carpeta del proyecto.
+                Ya dentro de ella, crea una <strong>rama local (branch)</strong> exclusiva para tu trabajo para no
+                afectar la rama
+                principal (<code>main</code>) y cambiate a ella.
+                El formato recomendado para nombrar tu rama es: <code>feature/tu_nombre_apellido_cedula</code>.
+                Ejemplo: <code>feature/paulo_joaquin_22014778</code>.
+            </p>
+            <pre><code>git clone [URL_DEL_REPOSITORIO_REMOTO]
+cd [NOMBRE_DE_LA_CARPETA]
+git checkout -b feature/tu_nombre_apellido_cedula</code></pre>
+            <p><em>Nota: Sustituye los corchetes con los datos reales.</em></p>
+        </div>
+
+        <div class="card">
+            <h3><span class="step-number">2</span> Crear la Página Local</h3>
+            <p>
+                Ya en tu rama creada, dirígete a la carpeta llamada <code>paginas_estudiantes/</code> que ya viene en el
+                proyecto. Crea una copia de esta <a
+                    href="./paginas_estudiantes/plantilla_tu_nombre_apellido_cedula.html" target="_blank">plantilla</a>
+                y renómbrala con tu nombre, apellido y cédula siguiendo el formato:
+                (ej. <code>tu_nombre_apellido_cedula.html</code>).
+            </p>
+
+        </div>
+
+        <div class="card">
+            <h3><span class="step-number">3</span> Flujo de Commits (Versionado)</h3>
+            <p>A medida que vayas construyendo tu página, debes registrar tu progreso realizando <strong>5
+                    commits atómicos</strong> (commits pequeños y específicos). Aquí tienes el estándar que debes usar:
+            </p>
+            <ul>
+                <li><strong>Commit 1:</strong> Crear tu archivo HTML base usando plantilla.<br>
+                    <code>git commit -m "feat: crear archivo HTML base a partir de plantilla"</code>
+                </li>
+                <li><strong>Commit 2:</strong> Personalizar la plantilla con tu información.<br>
+                    <p style="margin-top: 0px;">
+                        Edita en tu archivo los textos entre corchetes con tus datos reales:
+                    <ul>
+                        <li><code>[Título del Tema Asignado]</code></li>
+                        <li><code>[Subtítulo o descripción breve del punto a investigar]</code></li>
+                        <li><code>[Tu Nombre y Apellido]</code></li>
+                        <li><code>[Tu Cédula]</code></li>
+                        <li><code>[Tu Correo en classroom]</code></li>
+                    </ul>
+                    <br>
+                    <small style="color: #7f8c8d;">
+                        Asegúrate de mantener la estructura HTML tal como fue diseñada y solo cambia lo que se te pide.
+                    </small>
+
+                    </p>
+                    <code>git commit -m "feat: Personalizar archivo HTML con datos personales"</code>
+                </li>
+                <li><strong>Commit 3:</strong> Añadir contenido sobre tu tema asignado.<br>
+                    <p style="margin-top: 0px;">
+                        Edita en tu archivo los textos entre corchetes con el tema que te tocó exponer:
+                    <ul>
+                        <li><code>[Escribe aquí la introducción a tu investigación...]</code></li>
+                        <li><code>[Punto importante 1...]</code>, <code>[Punto importante N...]</code> </li>
+                        <li><code>[Conclusión o resumen final de tu investigación...]</code></li>
+                    </ul>
+                    <br>
+                    <small style="color: #7f8c8d;">
+                        Asegúrate de mantener la estructura HTML tal como fue diseñada y solo cambia lo que se te pide.
+                    </small>
+                    </p>
+                    <code>git commit -m "docs: agregar contenido sobre [tu tema asignado]"</code>
+                </li>
+                <li><strong>Commit 4:</strong> Añadir botón de retorno.<br>
+                    Reemplazar el comentartio html:<br>
+                    <code>&lt;!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL --&gt;</code><br>
+                    Por el siguiente código:<br>
+                    <code>&lt;a href="../index.html" class="btn-back"&gt;Volver al Catálogo Principal&lt;/a&gt;</code><br>
+                    <small style="color: #7f8c8d;">
+                        Asegúrate de mantener la estructura HTML tal como fue diseñada y solo cambia lo que se te pide.
+                    </small>
+                    <br>
+                    <code>git commit -m "feat: añadir botón de retorno"</code>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3><span class="step-number">4</span> Integración en el Catálogo Principal</h3>
+            <p>Ahora debes vincular tu página. Abre el archivo <code>index.html</code> (el que está en la raíz). Busca
+                la fila de la tabla donde está tu nombre y cédula (Si no la encuentras, créala).</p>
+            <p>Notarás que en la columna de investigación dice <code>Enlace a tu pagina.</code> Debes borrar ese texto y
+                reemplazarlo por una etiqueta <code>&lt;a&gt;</code> que apunte a tu archivo, colocando como texto
+                visible el tema real que te cocó exponer en el video.</p>
+            <pre><code>&lt;!-- DEBE CAMBIAR DE ESTO: --&gt;
+&lt;td&gt;Enlace a tu pagina.&lt;/td&gt;
+
+&lt;!-- A ESTO: --&gt;
+&lt;td&gt;&lt;a href="./paginas_estudiantes/tu_nombre_apellido_cedula.html"&gt;Funciones de la RAM&lt;/a&gt;&lt;/td&gt;</code></pre>
+
+            <ul>
+                <li><strong>Commit 5:</strong> Vincular página local en el index principal.<br>
+                    <code>git commit -m "feat: vincular página local en el index principal"</code>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3><span class="step-number">5</span> Subir al Remoto (Push)</h3>
+            <p>Como tu rama <code>feature/...</code> fue creada en tu computadora y no existe aún en el servidor remoto,
+                un <code>git push</code> normal arrojará error. Para subirla y rastrearla correctamente, debes usar la
+                bandera <code>-u</code> de esta manera:</p>
+            <pre><code>git push -u origin feature/tu_nombre_apellido_cedula</code></pre>
+            <p>¡Listo! Al hacer esto, el docente podrá revisar tu rama, evaluar tus commits y fusionar tu trabajo a la
+                rama
+                <code>main</code>.
+            </p>
+        </div>
+
+        <div class="card" style="border-left: 8px solid #27ae60;">
+            <h3><span class="step-number" style="background-color: #27ae60;">5</span> Sincronización Continua (Pull)
+            </h3>
+            <p>
+                Tu trabajo no termina al hacer push al remoto. <br>
+                Para mantener tu repositorio local actualizado con los aportes y validaciones que el profesor realice en
+                la rama <code>main</code>, debes asegurarte de sincronizar frecuentemente. <br>
+                Es el profesor quien realizará la fusión de tu rama a <code>main</code> cuando revise tu trabajo, 
+                asi como también el de tus compañeros. <br>
+                Cada vez que el profesor haga merge de una rama a <code>main</code>, debes actualizar tu repositorio local para reflejar esos cambios y tener la versión más reciente.
+            </p>
+            <pre><code># Cambiate a la rama main
+git checkout main
+
+# Trae las actualizaciones del servidor
+git pull origin main
+
+# Si necesitas regresar a tu rama de trabajo para seguir editando
+git checkout feature/tu_nombre_apellido_cedula</code></pre>
+            <p>
+                <em>Nota: Esto garantiza que siempre estés trabajando sobre la versión más reciente del catálogo y que
+                    tu repositorio local no se desvíe del progreso colectivo de la clase. Siempre actualiza <code>main</code> y no tu rama de trabajo.</em>
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap:10px; margin-top: 20px;">
+            <a href="./index.html" class="btn-rubrica" style="background-color: #7f8c8d;">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                </svg>
+                Volver al Catálogo
+            </a>
+            <a href="./ponderacion.html" class="btn-rubrica">
+                Ver Rúbrica de Evaluación
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

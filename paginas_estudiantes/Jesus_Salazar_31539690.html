@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada/Salida (E/S) y Gestión de Dispositivos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img class="logo-image" src="../imagenes/logo_ubv.jpg" alt="Logo UBV">
+        </div>
+        <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+        <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+        <hr>
+        <h2>Entrada/Salida (E/S) y Gestión de Dispositivos</h2>
+    </header>
+
+    <main class="card">
+        <h3>Cómo el sistema operativo gestiona la comunicación con los periféricos: teclados, monitores, discos, impresoras y redes.</h3>
+        
+        <p>
+            <strong>Estudiante:</strong> Jesus Salazar (C.I: 31539690)<br>
+            <strong>Correo en Classroom:</strong> jesus.salazar.3b@gmail.com
+        </p>
+        <hr style="border: 1px solid #eee; margin-bottom: 20px;">
+
+        <p>La gestión de Entrada/Salida (E/S) es una de las funciones más importantes de un sistema operativo. Sin ella, el software no podría interactuar con el hardware externo como teclados, ratones, discos duros, impresoras o tarjetas de red. El sistema operativo actúa como un intermediario que organiza, controla y optimiza la comunicación entre la CPU y los periféricos, permitiendo que los programas funcionen sin preocuparse por los detalles físicos de cada dispositivo.</p>
+
+        <h4>Conceptos clave:</h4>
+        <ul>
+            <li>Principios del hardware de E/S: Los dispositivos se clasifican en dos tipos. Los dispositivos de bloques (como discos duros y USB) almacenan datos en bloques de tamaño fijo y permiten acceso aleatorio. Los dispositivos de caracteres (como teclados y ratones) transfieren datos byte por byte en orden secuencial, sin direccionamiento.</li>
+            <li>Técnicas de comunicación con la CPU: Existen tres métodos. La E/S programada (sondeo) donde la CPU espera activamente al dispositivo, desperdiciando ciclos. Las interrupciones donde el dispositivo avisa a la CPU cuando está listo, mejorando la eficiencia. El DMA (Acceso Directo a Memoria) permite que el dispositivo transfiera datos directamente a la RAM sin intervención constante de la CPU.</li>
+            <li>Controladores y capas de software: Los drivers son módulos del sistema operativo que conocen los detalles específicos de cada hardware. Encima de ellos, las capas de E/S estandarizadas (gestor de E/S, sistema de archivos, llamadas al sistema) ofrecen una interfaz uniforme a los programas de usuario.</li>
+            <li>Buffering y Spooling: El buffering almacena datos temporalmente en memoria para igualar velocidades entre dispositivos (ej. mientras se escribe un archivo). El spooling (Simultaneous Peripheral Operation On-Line) encarga trabajos a dispositivos lentos como impresoras, permitiendo que los procesos sigan ejecutándose sin esperar.</li>
+        </ul>
+
+        <p>En conclusión, la gestión de E/S es esencial para que los sistemas operativos aprovechen al máximo el hardware. Las técnicas de interrupciones, DMA, drivers, buffering y spooling trabajan juntas para ofrecer un rendimiento eficiente y una experiencia de usuario fluida. Sin una buena gestión de E/S, el ordenador pasaría la mayor parte del tiempo esperando a sus periféricos.</p>
+
+        <a href="../../index.html" class="btn-back">Volver al Catálogo Principal</a>
+    </main>
+</div>
+
+</body>
+</html>

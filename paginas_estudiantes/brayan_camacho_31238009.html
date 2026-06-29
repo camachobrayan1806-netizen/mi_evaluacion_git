@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Procesos y Planificación de la CPU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img class="logo-image" src="../imagenes/logo_ubv.jpg" alt="Logo UBV">
+        </div>
+        <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+        <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+        <hr>
+        <h2>Gestión de Procesos y Planificación de la CPU</h2>
+    </header>
+
+    <main class="card">
+        <h3>Conceptos clave y algoritmos de planificación</h3>
+        
+        <p>
+            <strong>Estudiante:</strong> Brayan Camacho (C.I: 31.238.009)<br>
+            <strong>Correo en Classroom:</strong> camachobrayan1806@gmail.com
+        </p>
+        <hr style="border: 1px solid #eee; margin-bottom: 20px;">
+
+        <p>Un sistema operativo actúa como el director de una orquesta, decidiendo qué programa se ejecuta y por cuánto tiempo. La gestión de procesos y la planificación de la CPU son fundamentales para garantizar que los recursos del sistema se utilicen de manera eficiente, evitando que un solo programa acapare el procesador y permitiendo la multitarea.</p>
+
+        <h4>Conceptos clave:</h4>
+        <ul>
+            <li><strong>Proceso vs. Hilo:</strong> Un proceso es un programa en ejecución con su propia memoria aislada. Un hilo (thread) es una unidad más pequeña dentro de ese proceso; varios hilos pueden compartir la misma memoria, haciendo que el programa haga varias cosas a la vez de forma más ligera.</li>
+<li><strong>Estados de un proceso:</strong> Durante su vida, un proceso pasa por varios estados: <em>Nuevo</em> (recién creado), <em>Listo</em> (esperando su turno en la CPU), <em>En ejecución</em> (usando el procesador), <em>Bloqueado</em> (esperando que termine otra acción, como leer un archivo) y <em>Terminado</em>.</li>
+
+<li><strong>Bloque de Control de Proceso (PCB):</strong> Es una estructura de datos (como un expediente o ficha) donde el sistema operativo guarda toda la información vital de un proceso, como su estado actual, su número de identificación (PID) y la memoria que está usando.</li>
+
+<li><strong>Algoritmos de planificación:</strong> Son las reglas que usa la CPU para elegir el siguiente proceso. <em>FIFO/FCFS</em> atiende al primero que llega. <em>El más corto primero (SJF)</em> atiende al proceso que tomará menos tiempo. <em>Round Robin</em> le da a cada proceso un pequeño turno de tiempo por igual y va rotando entre ellos.</li>
+        </ul>
+
+        <p>En conclusión, una correcta gestión de los procesos y la elección del algoritmo de planificación adecuado son vitales para el rendimiento de cualquier computadora. Estas técnicas son las que permiten que el usuario experimente un sistema fluido, rápido y capaz de ejecutar múltiples aplicaciones al mismo tiempo sin colapsar.</p>
+
+        <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
+    </main>
+</div>
+
+</body>
+</html>

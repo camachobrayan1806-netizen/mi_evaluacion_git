@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Procesos y Planificación de la CPU - Newman García</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Procesos y Planificación de la CPU</h1>
+        <p class="subtitulo">Asignatura: Versionado de Proyectos con Git</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="datos-estudiante">
+            <h2>Datos del Estudiante</h2>
+            <ul>
+                <li><strong>Nombre:</strong> Newman García</li>
+                <li><strong>Cédula:</strong> 31.939.713</li>
+                <li><strong>Correo:</strong> newmanfranco4@gmail.com</li>
+            </ul>
+        </section>
+
+        <section class="contenido-investigacion">
+            <h2>Investigación del Tema Asignado</h2>
+            <p>La gestión de procesos es uno de los pilares fundamentales de un sistema operativo, encargado de administrar cómo los programas en ejecución comparten de manera eficiente los recursos limitados del hardware, principalmente la Unidad Central de Procesamiento (CPU).</p>
+            
+            <h3>Planificación de la CPU</h3>
+            <p>La planificación de la CPU es el proceso mediante el cual el sistema operativo determina qué proceso en estado de "listo" ocupará el procesador en un momento dado. Esto se gestiona a través de algoritmos diseñados para maximizar el uso de la CPU y reducir los tiempos de espera.</p>
+
+            <h3>Tipos de Algoritmos de Planificación</h3>
+            <ul>
+                <li><strong>First-Come, First-Served (FCFS):</strong> Atiende los procesos en el estricto orden en que van llegando. Es simple pero puede generar el efecto convoy.</li>
+                <li><strong>Shortest Job First (SJF):</strong> Selecciona el proceso que requiera el menor tiempo de ejecución, optimizando el tiempo de espera promedio.</li>
+                <li><strong>Round Robin (RR):</strong> Asigna a cada proceso un pequeño intervalo de tiempo de CPU llamado "quantum". Si el proceso no termina en su turno, vuelve al final de la cola.</li>
+            </ul>
+        </section>
+
+        <div class="contenedor-boton">
+            <a href="../index.html" class="btn-back">Volver al Catálogo</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Universidad Bolivariana de Venezuela | Informática para la Gestión Social</p>
+    </footer>
+</body>
+</html>

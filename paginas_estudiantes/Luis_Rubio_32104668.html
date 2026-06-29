@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Título del Tema Asignado]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img class="logo-image" src="../imagenes/logo_ubv.jpg" alt="Logo UBV">
+        </div>
+        <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+        <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+        <hr>
+        <h2>Introducción y Arquitectura de los Sistemas Operativos</h2>
+    </header>
+
+    <main class="card">
+        <h3>Definición, funciones, evolución histórica, kernel, interfaces y arquitecturas internas de los Sistemas Operativos</h3>
+        
+        <p>
+            <strong>Estudiante:</strong> Luis Rubio (C.I: 32.104.668)<br>
+            <strong>Correo en Classroom:</strong> lr725932@gmail.com
+        </p>
+        <hr style="border: 1px solid #eee; margin-bottom: 20px;">
+
+        <p><p>Un Sistema Operativo (SO) es el software fundamental que actúa como intermediario entre el hardware y los programas del usuario. Sus principales objetivos son la comodidad, la eficiencia y la capacidad de evolución. En esta investigación exploraremos la evolución histórica de los SO, el núcleo o kernel, los tipos de interfaz de usuario y las diferentes arquitecturas internas (monolítico, microkernel e híbrido).</p></p>
+
+        <h4>Conceptos clave:</h4>
+        <ul>
+            <li>Gestión de procesos: Un proceso es un programa en ejecución. El SO se encarga de crear, planificar, pausar, reanudar y terminar procesos, resolviendo conflictos cuando múltiples procesos compiten por los mismos recursos.</li>
+            <li>Gestión de memoria: Controla qué partes de la RAM están ocupadas, asigna y libera memoria según los programas lo requieran, e implementa técnicas como la memoria virtual para simular más RAM de la que existe físicamente.</li>
+            <li>El Kernel (núcleo): Es el componente más fundamental del SO, el único software con acceso directo al hardware. Opera en modo kernel (privilegiado) mientras las aplicaciones corren en modo usuario (restringido), garantizando estabilidad y seguridad.</li>
+            <li>Llamadas al sistema (System Calls): Son el mecanismo mediante el cual los programas de usuario solicitan servicios al kernel. Ejemplos: open(), read(), write(), fork(), exec() - la única puerta de entrada autorizada al núcleo del SO.</li>
+            <li>Arquitecturas del kernel: Monolítico (todo en un bloque, alto rendimiento como Linux), Microkernel (solo lo esencial, alta estabilidad como QNX) e Híbrido (compromiso como Windows o macOS).</li>
+        </ul>
+
+        <p><p>En conclusión, el Sistema Operativo es el puente fundamental entre el usuario y el hardware. Su evolución ha pasado de las tarjetas perforadas a los sistemas móviles y la nube. Su corazón, el kernel, opera en modo privilegiado gestionando recursos mediante interrupciones y system calls. Finalmente, su arquitectura interna —monolítica, microkernel o híbrida— define su equilibrio entre rendimiento, estabilidad y seguridad. No existe una arquitectura universalmente mejor; todo depende del caso de uso: un servidor web prefiere Linux (monolítico), un sistema de control de vuelo prefiere QNX (microkernel).</p></p>
+
+        <a href="../index.html" class="btn-back">← Volver al catálogo principal</a>
+
+    </main>
+</div>
+
+</body>
+</html>

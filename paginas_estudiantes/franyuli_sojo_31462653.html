@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurrencia: Sincronización y Bloqueos Mutuamente Excluyentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img class="logo-image" src="../imagenes/logo_ubv.jpg" alt="Logo UBV">
+        </div>
+        <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+        <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+        <hr>
+        <h2>Concurrencia: Sincronización y Bloqueos Mutuamente Excluyentes</h2>
+    </header>
+
+    <main class="card">
+        <h3>El arte de coordinar hilos y procesos en sistemas multitarea.</h3>
+        
+        <p>
+            <strong>Estudiante:</strong> Franyuli Sojo (C.I: 31.462.653)<br>
+            <strong>Correo en Classroom:</strong> franyulianali744@gmail.com
+        </p>
+        <hr style="border: 1px solid #eee; margin-bottom: 20px;">
+
+        <p>En los sistemas operativos modernos, la concurrencia permite que múltiples hilos o procesos se ejecuten simultáneamente, compartiendo recursos como la memoria o variables globales. Sin embargo, si dos procesos intentan modificar el mismo recurso al mismo tiempo, se produce una condición de carrera (race condition), generando datos corruptos o comportamientos impredecibles. Para evitar esto, es fundamental la sincronización, un conjunto de mecanismos que coordinan el acceso ordenado de los procesos a los recursos compartidos.</p>
+
+        <h4>Conceptos clave:</h4>
+        <ul>
+            <li><strong>Región Crítica:</strong> Es la parte del código de un programa donde se accede a un recurso compartido. La regla de oro en los sistemas operativos es que solo un proceso puede estar dentro de su región crítica a la vez.</li>
+<li><strong>Exclusión Mutua (Mutex):</strong> Es un mecanismo de sincronización que actúa como un "candado". Cuando un hilo quiere entrar a una región crítica, debe adquirir el Mutex (bloquearlo); si otro hilo intenta entrar, tendrá que esperar hasta que el primero libere el candado (desbloquear).</li>
+<li><strong>Condición de Carrera:</strong> Ocurre cuando el resultado final de la ejecución de múltiples hilos depende del orden exacto en que se ejecutan, lo que puede causar fallas catastróficas en el software si no se controla adecuadamente.</li>
+<li><strong>Interbloqueo (Deadlock):</strong> Es un problema grave que ocurre cuando dos o más hilos se bloquean mutuamente de forma indefinida, esperando por un recurso que el otro tiene retenido. El sistema operativo debe implementar estrategias para prevenir o resolver estas situaciones.</li>
+        </ul>
+
+        <p>En conclusión, la gestión de la concurrencia es uno de los mayores desafíos en el diseño de sistemas operativos y aplicaciones multiproceso. El uso correcto de herramientas de sincronización como los bloqueos mutuamente excluyentes (Mutex) garantiza la integridad de los datos y la consistencia del sistema, permitiendo aprovechar al máximo la potencia de los procesadores multinúcleo sin caer en condiciones de carrera o interbloqueos.</p>
+
+        <a href="../index.html" class="btn-back">Volver al Catálogo Principal</a>
+    </main>
+</div>
+
+</body>
+</html>

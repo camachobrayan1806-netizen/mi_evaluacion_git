@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de la Memoria Principal (RAM)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img class="logo-image" src="../imagenes/logo_ubv.jpg" alt="Logo UBV">
+        </div>
+        <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
+        <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
+        <hr>
+        <h2>Gestión de la Memoria Principal (RAM)</h2>
+    </header>
+
+    <main class="card">
+        <h3>Asignación de memoria, fragmentación, paginación, segmentación y memoria virtual</h3>
+        
+        <p>
+            <strong>Estudiante:</strong> Juan Perez (C.I: 30849045)<br>
+            <strong>Correo en Classroom:</strong> plax2052@gmail.com
+        </p>
+        <hr style="border: 1px solid #eee; margin-bottom: 20px;">
+
+        <p>La gestión de la memoria principal (RAM) es una de las funciones más críticas de un sistema operativo. Después de la CPU, la memoria es el recurso más limitado y disputado por los procesos activos. El SO debe decidir cómo asignar espacios de memoria a cada proceso, optimizando el rendimiento y evitando conflictos. En esta investigación se analizan los esquemas de asignación contigua y no contigua, los problemas de fragmentación y las técnicas de paginación, segmentación y memoria virtual.</p>
+
+        <h4>Conceptos clave:</h4>
+        <ul>
+            <li><strong>Asignación contigua vs no contigua:</strong> La asignación contigua asigna un bloque único continuo (sencilla pero con fragmentación externa). La no contigua divide el proceso en varios bloques dispersos (mayor flexibilidad).</li>
+            <li><strong>Fragmentación interna, externa y compactación:</strong> Fragmentación interna (desperdicio dentro del bloque), externa (huecos pequeños no contiguos). Solución: compactación (reordenar la memoria para unir huecos).</li>
+            <li><strong>Paginación y segmentación:</strong> Paginación divide memoria en marcos y procesos en páginas del mismo tamaño (elimina fragmentación externa). Segmentación divide en segmentos lógicos de tamaño variable (permite compartir, pero genera fragmentación externa).</li>
+            <li><strong>Memoria virtual y algoritmos de reemplazo:</strong> La memoria virtual usa disco como extensión. Algoritmos: FIFO (reemplaza la página más antigua), LRU (reemplaza la menos usada recientemente).</li>
+        </ul>
+
+        <p>La gestión eficiente de la memoria RAM es esencial para el rendimiento del sistema. Los sistemas operativos modernos combinan paginación con memoria virtual para ofrecer la ilusión de una memoria grande y privada a cada proceso. La elección del algoritmo de reemplazo (LRU frente a FIFO) afecta la tasa de aciertos y el rendimiento global. Comprender estos conceptos es fundamental para administrar sistemas operativos y desarrollar software eficiente.</p>
+
+        <a href="../index.html" class="btn-back">↩ Volver al Catálogo Principal</a>
+    </main>
+</div>
+
+</body>
+</html>
